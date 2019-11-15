@@ -45,11 +45,11 @@ opacity: 1;
 
 .header__title {
     position:absolute;
-}
-
-h1 {
     margin-top: 4.5vw;
     margin-left: 20.8vw;
+}
+
+.header__title > h1 {
     width: 15.1vw;
     text-align: left;
     font-family: 'Lora', serif;
@@ -59,10 +59,10 @@ h1 {
     color: #143774;
     opacity: 1;
     font-weight: bold;
+    white-space: nowrap;
 }
 
 .header__title > p {
-    margin-left: 20.8vw;
     /* width: 15.1vw; */
     font-size: 5.9px;
     line-height: 5.9px;
@@ -76,14 +76,15 @@ h1 {
 
 .header__nav {
     margin-left: 50vw;
-    width:100%;
+    max-width:50vw;
     margin-top: 5.4vw;
     position:absolute;
+     white-space: nowrap;
 }
 
 .header__link {
     text-align: right;
-    font: Bold 1.5vw Ubuntu;
+    font: Bold 10px Ubuntu;
     line-height: 18px;
     letter-spacing: 3.2px;
     color: #717171;
@@ -112,9 +113,9 @@ h1 {
     text-decoration: underline;
 }
 
-.content-wrapper {
+/* .content-wrapper {
     position: relative;
-}
+} */
 
 .content {
     display: flex;
@@ -125,24 +126,20 @@ h1 {
     margin: 2.6vw 2.4vw 69px 20.8vw;
 }
 
-.posts-list {
-    
-    
-    left: 20.8vw;
+.posts-list { 
+    /* left: 20.8vw; */
+    margin:0;
     width: 34.2vw;
 }
 
-.main-post,
-.next-post {
+.main-post
+ {
     border-bottom: 1px solid #75757591;
-    margin-top: 2.6vw;
-    
+    display:block;
 }
 
-.main-post__img {
-    width: 34.2vw;
-    border-bottom: 1px solid #75757591;
-    height: 14.9vw;
+.main-post__img {    
+    height: 14.77vw;
     text-align: center;
     position: relative; 
     margin-bottom: 26px;
@@ -151,21 +148,18 @@ h1 {
 
 .post__img,
 .small__img {
+    margin:0;
     width: 100%;
     object-fit: cover;
     height: 100%;
     overflow: hidden;
     display: block;
-    position: absolute;
 }
 
 .post__img:hover,
-
-
 .main-post__data,
 .next-post__data,
-.post__comments {
-    margin: 0;
+.post__comments {   
     text-align: left;
     font-weight: normal;
     font-size: 14px;
@@ -175,19 +169,27 @@ h1 {
     color: #707070;
     opacity: 1;
 }
+.post__comments{
+    padding-top: 1.25vw;
+    margin:0;
+    font-size: 7px;
+    line-height: 9.5px;
+    text-align: left;
+    letter-spacing: 0;
+    position: relative;
+}
 .main-post__data {
-    margin-top: 2.6vw;
-    margin-bottom: 26px;
+    margin-bottom: 1.25vw;
+    
 }
 
 .main-post__content h2,
 .next-post__content h2 {
     text-align: left;
-    color: rgba(20, 55, 116, 1);
-    font-weight: normal;
     font-family: 'Lora', serif;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(20, 55, 116, 1);
     margin-bottom: 20px;
 }
 
@@ -195,10 +197,9 @@ h1 {
 .next-post__content p {
     text-align: left;
     font-weight: lighter;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 9px;
+    line-height: 14px;
     color: rgba(112, 112, 112, 1);
-    margin-bottom: 20px;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: normal;
@@ -213,13 +214,12 @@ h1 {
 
 .post__continue {
     text-align: left;
+    font-size: 7px;
+    line-height: 14px;
+    letter-spacing: 1.4px;
     color: rgba(23, 146, 210, 1);
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 14px;
-    line-height: 28px;
-    margin-top: 30px;
-    letter-spacing: 2.8px;
 }
 
 .next-post {
@@ -238,9 +238,7 @@ h1 {
     height: 242px;
     text-align: center;
     position: relative;
-    margin-right: 27px;
-    margin-bottom: 11px;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .aside-wrapper{
