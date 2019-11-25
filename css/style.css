@@ -19,21 +19,16 @@ body {
 }
 
 .header {
-    top: 0px;
+    /* top: 0px;
 left: -35px;
 width: 100vw;
-height: 12.7vw;
+height: 12.7vw; */
+height:265px;
 background: #F8F8F8 0% 0% no-repeat padding-box;
-opacity: 1;
+/* opacity: 1; */
 }
 
-.header__reduce {
-    padding: 2px 0;
-    height: 60px;
-    -webkit-backface-visibility: hidden;
-}
-
-.header__wrapper {
+ .header__wrapper {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -41,6 +36,15 @@ opacity: 1;
     margin-left: 22.6%;
     margin-right: 25.16%;
     justify-content: space-between;
+} 
+
+.header_wrapper{
+    display:flex;
+    max-width: 1005px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 .header__title {
@@ -104,14 +108,18 @@ opacity: 1;
     height: 1px;
 }
 
-.passive:hover:after,
+/* .passive:hover:after,
 .passive:focus:after {
     width: 100%;
+} */
+
+/* .header__link .active {
+    border-bottom: 1 px solid;
 }
 
-.header__link .active {
-    text-decoration: underline;
-}
+.header__link:hover {
+    border-bottom: 1 px solid;
+} */
 
 /* .content-wrapper {
     position: relative;
@@ -119,17 +127,21 @@ opacity: 1;
 
 .content {
     display: flex;
-    flex-flow: row nowrap;
+    /* flex-flow: row nowrap;
     position: relative;
-    justify-content: space-between;
+    
     flex: 1 1 70%;
-    margin: 2.6vw 2.4vw 69px 20.8vw;
+    margin: 2.6vw 2.4vw 69px 20.8vw; */
+    max-width: 1005px;
+    margin: 54px auto;
+    justify-content: space-between;
 }
 
 .posts-list { 
     /* left: 20.8vw; */
     margin:0;
-    width: 34.2vw;
+    /* width: 34.2vw; */
+    width:70%;
 }
 
 .main-post
@@ -139,11 +151,12 @@ opacity: 1;
 }
 
 .main-post__img {    
-    height: 14.77vw;
-    text-align: center;
-    position: relative; 
+    /* height: 14.77vw; */
+    /* text-align: center; */
+    /* position: relative;  */
+    /* overflow: hidden; */
     margin-bottom: 26px;
-    overflow: hidden;
+    height: 300px;
 }
 
 .post__img,
@@ -154,12 +167,12 @@ opacity: 1;
     height: 100%;
     overflow: hidden;
     display: block;
+    oblect-position: bottom;
 }
 
 .post__img:hover,
 .main-post__data,
-.next-post__data,
-.post__comments {   
+.next-post__data{   
     text-align: left;
     font-weight: normal;
     font-size: 14px;
@@ -172,11 +185,15 @@ opacity: 1;
 .post__comments{
     padding-top: 1.25vw;
     margin:0;
-    font-size: 7px;
-    line-height: 9.5px;
+    font-size: 14px;
+    line-height: 19px;
     text-align: left;
     letter-spacing: 0;
     position: relative;
+}
+
+.next_post_comments{
+    margin-top:11px;
 }
 .main-post__data {
     margin-bottom: 1.25vw;
@@ -187,8 +204,8 @@ opacity: 1;
 .next-post__content h2 {
     text-align: left;
     font-family: 'Lora', serif;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 24px;
+    line-height: 28px;
     color: rgba(20, 55, 116, 1);
     margin-bottom: 20px;
 }
@@ -206,6 +223,14 @@ opacity: 1;
     display: -webkit-box;
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
+   
+}
+
+.next-post__content a,
+.next-post__content p,
+.next-post__content h2
+ {
+    margin-left:20px;
 }
 
 .main-post__content a {
@@ -214,12 +239,14 @@ opacity: 1;
 
 .post__continue {
     text-align: left;
-    font-size: 7px;
-    line-height: 14px;
+    font-size: 14px;
+    line-height: 28px;
     letter-spacing: 1.4px;
     color: rgba(23, 146, 210, 1);
     text-transform: uppercase;
     font-weight: bold;
+    display:inline-block;
+    margin:15px 0;
 }
 
 .next-post {
@@ -245,8 +272,9 @@ opacity: 1;
     display: flex;
     max-width: 240px;
     flex-direction: column;
-    margin-left: 51px;
-    flex: 1 1 29%
+    /* margin-left: 51px; */
+    /* flex: 1 1 29% */
+    width:30%;
 }
 
 .sidebar {
@@ -396,6 +424,7 @@ ul {
     .posts-list {
         flex: 1 1 100%;
         max-width: 557px;
+        width:70%;
     }
 
     .main-post {
@@ -430,12 +459,17 @@ ul {
     }
 
     .aside-wrapper{
+        display:flex;
+        justify-content:space-between;
         max-width: 518px;
         flex-direction: column;
-        margin-left: 0;
+        /* margin-left: 0;
         flex: 1 1 518px;
-        margin-top: 24px;
+        margin-top: 24px; */ */
+        width:30%;
     }
+
+    
 
     .sidebar:nth-child(2) {
         margin-top: 78px;
