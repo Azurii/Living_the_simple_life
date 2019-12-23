@@ -380,21 +380,23 @@ ul {
         padding: 47px 0 61px;
     }
 
-    .header__wrapper {
+    .header_wrapper {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         max-width: 557px;
-        margin: 0;
+        margin:0;
         flex-wrap:wrap;
     }
 
-    
+    .header__title{
+        margin-bottom:25px;
+    }
 
     .header__link {
         text-align: center;
         display: block;
-        margin: 0 0 30px;
+        margin: 0 0 25px;
     }
 
     .content {
